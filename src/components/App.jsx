@@ -35,7 +35,7 @@ class App extends Component {
 
     return (
       <>
-        <Section title="Please leave feedback">
+        <Section className={css.title} title="Please leave feedback">
           <FeedbackOptions getFeedbacks={this.getFeedbacks} />
           {this.countTotalFeedbacks() === 0 ? (
             <Notification message="There is no feedback" />
