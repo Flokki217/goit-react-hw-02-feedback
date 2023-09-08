@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import css from './FeedbackOptions.module.css';
 
 export default class FeedbackOptions extends Component {
-  handleClick = e => {
-    this.props.getFeedbacks(e.target.name);
+  handleClick = evt => {
+    this.props.getFeedbacks(evt.target.name);
   };
 
   render() {
